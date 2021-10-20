@@ -23,7 +23,7 @@ public class TerminalChat {
             System.out.println("1 - Iniciar Cliente");
             System.out.println("2 - Iniciar Servidor");
             System.out.println("3 - Sair");
-            System.out.print("\nInforme uma opção: ");
+            System.out.print("Informe uma opção: ");
             op = teclado.nextInt();
             if (op > 0 && op < 4) {
                 return op;
