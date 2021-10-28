@@ -23,7 +23,7 @@ public class TerminalChat {
             System.out.println("1 - Iniciar Cliente");
             System.out.println("2 - Iniciar Servidor");
             System.out.println("3 - Sair");
-            System.out.print("Informe uma opção: ");
+            System.out.println("Informe uma opção: ");
             op = teclado.nextInt();
             if (op > 0 && op < 4) {
                 return op;
@@ -35,9 +35,9 @@ public class TerminalChat {
 
     private static void initClient() throws IOException {
         System.out.println("Iniciando cliente.");
-        System.out.print("\nInforme o IP ou o HOST do servidor: ");
+        System.out.println("\nInforme o IP ou o HOST do servidor: ");
         String host = teclado.next();
-        System.out.print("Informe a porta do servidor: ");
+        System.out.println("Informe a porta do servidor: ");
         int port  = teclado.nextInt();
         teclado.nextLine();
 
@@ -60,9 +60,9 @@ public class TerminalChat {
     }
 
     private static void initServer() throws IOException {
-        System.out.print("Informe a porta do servidor: ");
+        System.out.println("Informe a porta do servidor: ");
         int port = teclado.nextInt();
-        System.out.print("Informe o número de conexões: ");
+        System.out.println("Informe o número de conexões: ");
         int n = teclado.nextInt();
         /**
          * Cria o servidor
